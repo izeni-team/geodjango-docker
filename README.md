@@ -3,4 +3,4 @@ container.
 
 ### Getting
 
-Get using `docker pull registry.izeni.net/jgardner/geodjango`
+Get using `docker pull izeni/geodjango`
