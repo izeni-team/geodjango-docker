@@ -38,3 +38,7 @@ RUN curl -O http://download.osgeo.org/proj/proj-$BUILD_PROJ4_VERSION.tar.gz && \
     rm -rf proj-$BUILD_PROJ4_VERSION.tar.gz proj-datumgrid-$BUILD_DATUMGRID_VERSION.tar.gz proj-$BUILD_PROJ4_VERSION
 
 ENV CPATH=/usr/include/gdal:/usr/local/include/python3.5m PYTHONUNBUFFERED=1
+
+WORKDIR /
+
+RUN pip install GDAL==2.1.0 Django
